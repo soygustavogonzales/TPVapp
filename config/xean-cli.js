@@ -1,8 +1,6 @@
 var cli_input = require('cli-input'),
 lineByLine = require('line-by-line'),
 q = require('q'),
-asciiArt = require('ascii-art'),
-ttycolor = require('ttycolor'),
 fs = require('fs'),
 fs_extra = require('fs-extra'),
 wrench = require('wrench'),
@@ -11,7 +9,6 @@ var sets = cli_input.sets,
 definitions = sets.definitions,
 name = path.basename(process.argv[1]),
 def = definitions.confirm.clone(),
-ttycolor = ttycolor.defaults(),
 ps = cli_input(),
 gulp_paths = require('./gulp.paths')
 ;
